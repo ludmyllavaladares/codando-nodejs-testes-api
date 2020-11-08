@@ -1,4 +1,5 @@
-# Jornadas Nodejs
+# Jornadas - Praticando
 
-Códigos resultantes da Jornada em Nodejs.
+Códigos resultantes da Jornada.
+
 
