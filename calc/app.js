@@ -1,43 +1,43 @@
-// var N1 = prompt('Digite o primeiro número')
-// var N2 = prompt('Digite o segundo número')
-
-var number1 = document.getElementById('number1');
+/*var number1 = document.getElementById('number1');
 var number2 = document.getElementById('number2');
-var button = document.querySelector("button");
-//console.log(button);
+var button = document.getElementById('button');
 
-button.onclick = function() {
+button.onclick = function(soma) {
     var soma = somar(number1.value, number2.value);
-    document.write('<p> total da soma foi = ', soma, '</p>')
+    document.write('<p> Total da soma foi = ', soma, '</p>');
 }
 
+button.onclick = function(subtracao) {
+    var subtracao = subtrair(number1.value, number2.value);
+    document.write('<p> Total da subtração foi = ', subtracao, '</p>');
+}
 
-// var soma = somar(N1, N2)
-// var subtracao = subtrair(N1, N2)
-// var multiplicacao = multiplicar(N1, N2)
-// var divisao = dividir(N1, N2)
+button.onclick = function(multiplicacao) {
+    var multiplicacao = subtrair(number1.value, number2.value);
+    document.write('<p> Total da multipicação foi = ', multiplicacao, '</p>');
+}
 
-// document.write('O total da soma foi = ', soma, '<br>')
-// document.write('O total da subtração foi = ', subtracao, '<br>')
-// document.write('O total da multiplicação foi = ', multiplicacao, '<br>')
-// document.write('O total da divisão foi = ', divisao, '<br>')
+button.onclick = function(divisao) {
+    var divisao = subtrair(number1.value, number2.value);
+    document.write('<p> Total da divisão foi = ', divisao, '</p>');
+}*/
 
-// function somar (N1, N2){
-//     var soma = parseInt(N1) + parseInt(N2)
-//     return soma
-// }
+function calculadora(){
+    var number1 = document.getElementById('number1').value;
+    var number2 = document.getElementById('number2').value;
+    var oper = document.getElementById('oper').value;
 
-// function subtrair (N1, N2){
-//     var subtracao = parseInt(N1) - parseInt(N2)
-//     return subtracao
-// }
-
-// function multiplicar (N1, N2){
-//     var multiplicacao = parseInt(N1) * parseInt(N2)
-//     return multiplicacao
-// }
-
-// function dividir (N1, N2){
-//     var divisao = parseInt(N1) / parseInt(N2)
-//     return divisao
-// }
+if(oper == "soma"){
+   (parseInt(number1) + parseInt(number2));
+    document.write('<p> Total da soma foi = ', soma, '</p>');
+}else if(oper == "subtracao"){
+    (parseInt(number1) - parseInt(number2));
+    document.write('<p> Total da subtração foi = ', subtracao, '</p>');
+}else if(oper == "multiplicacao"){
+    (parseInt(number1) * parseInt(number2));
+    document.write('<p> Total da multipicação foi = ', multiplicacao, '</p>');
+}else{
+    (parseInt(number1) / parseInt(number2));
+    document.write('<p> Total da divisão foi = ', divisao, '</p>');
+}
+}
